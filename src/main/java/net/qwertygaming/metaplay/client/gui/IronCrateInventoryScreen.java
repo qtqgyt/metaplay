@@ -1,6 +1,6 @@
 package net.qwertygaming.metaplay.client.gui;
 
-import net.qwertygaming.metaplay.world.inventory.GrinderGUIMenu;
+import net.qwertygaming.metaplay.world.inventory.IronCrateInventoryMenu;
 
 import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.player.Player;
@@ -14,13 +14,13 @@ import java.util.HashMap;
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.systems.RenderSystem;
 
-public class GrinderGUIScreen extends AbstractContainerScreen<GrinderGUIMenu> {
-	private final static HashMap<String, Object> guistate = GrinderGUIMenu.guistate;
+public class IronCrateInventoryScreen extends AbstractContainerScreen<IronCrateInventoryMenu> {
+	private final static HashMap<String, Object> guistate = IronCrateInventoryMenu.guistate;
 	private final Level world;
 	private final int x, y, z;
 	private final Player entity;
 
-	public GrinderGUIScreen(GrinderGUIMenu container, Inventory inventory, Component text) {
+	public IronCrateInventoryScreen(IronCrateInventoryMenu container, Inventory inventory, Component text) {
 		super(container, inventory, text);
 		this.world = container.world;
 		this.x = container.x;
@@ -28,10 +28,10 @@ public class GrinderGUIScreen extends AbstractContainerScreen<GrinderGUIMenu> {
 		this.z = container.z;
 		this.entity = container.entity;
 		this.imageWidth = 176;
-		this.imageHeight = 166;
+		this.imageHeight = 223;
 	}
 
-	private static final ResourceLocation texture = new ResourceLocation("metaplay:textures/screens/grinder_gui.png");
+	private static final ResourceLocation texture = new ResourceLocation("metaplay:textures/screens/iron_crate_inventory.png");
 
 	@Override
 	public void render(PoseStack ms, int mouseX, int mouseY, float partialTicks) {
@@ -66,6 +66,7 @@ public class GrinderGUIScreen extends AbstractContainerScreen<GrinderGUIMenu> {
 
 	@Override
 	protected void renderLabels(PoseStack poseStack, int mouseX, int mouseY) {
+		this.font.draw(poseStack, Component.translatable("gui.metaplay.iron_crate_inventory.label_crate"), 6, 8, -12829636);
 	}
 
 	@Override

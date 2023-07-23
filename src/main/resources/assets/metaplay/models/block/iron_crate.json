@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "metaplay:block/ironcrate",
+    "up": "metaplay:block/ironcrate",
+    "north": "metaplay:block/ironcrate",
+    "east": "metaplay:block/ironcrate",
+    "south": "metaplay:block/ironcrate",
+    "west": "metaplay:block/ironcrate",
+    "particle": "metaplay:block/ironcrate"
+  },
+  "render_type": "solid"
+}

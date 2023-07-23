@@ -4,6 +4,7 @@
  */
 package net.qwertygaming.metaplay.init;
 
+import net.qwertygaming.metaplay.block.entity.IronCrateBlockEntity;
 import net.qwertygaming.metaplay.block.entity.GrinderBlockEntity;
 import net.qwertygaming.metaplay.block.entity.CrateBlockEntity;
 import net.qwertygaming.metaplay.MetaplayMod;
@@ -19,6 +20,7 @@ public class MetaplayModBlockEntities {
 	public static final DeferredRegister<BlockEntityType<?>> REGISTRY = DeferredRegister.create(ForgeRegistries.BLOCK_ENTITY_TYPES, MetaplayMod.MODID);
 	public static final RegistryObject<BlockEntityType<?>> GRINDER = register("grinder", MetaplayModBlocks.GRINDER, GrinderBlockEntity::new);
 	public static final RegistryObject<BlockEntityType<?>> CRATE = register("crate", MetaplayModBlocks.CRATE, CrateBlockEntity::new);
+	public static final RegistryObject<BlockEntityType<?>> IRON_CRATE = register("iron_crate", MetaplayModBlocks.IRON_CRATE, IronCrateBlockEntity::new);
 
 	private static RegistryObject<BlockEntityType<?>> register(String registryname, RegistryObject<Block> block, BlockEntityType.BlockEntitySupplier<?> supplier) {
 		return REGISTRY.register(registryname, () -> BlockEntityType.Builder.of(supplier, block.get()).build(null));

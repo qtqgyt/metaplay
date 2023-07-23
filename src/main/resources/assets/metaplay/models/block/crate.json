@@ -1,13 +1,13 @@
 {
   "parent": "block/cube",
   "textures": {
-    "down": "metaplay:blocks/house1lootbox",
-    "up": "metaplay:blocks/house1lootbox",
-    "north": "metaplay:blocks/house1lootbox",
-    "east": "metaplay:blocks/house1lootbox",
-    "south": "metaplay:blocks/house1lootbox",
-    "west": "metaplay:blocks/house1lootbox",
-    "particle": "metaplay:blocks/house1lootbox"
+    "down": "metaplay:block/crate",
+    "up": "metaplay:block/crate",
+    "north": "metaplay:block/crate",
+    "east": "metaplay:block/crate",
+    "south": "metaplay:block/crate",
+    "west": "metaplay:block/crate",
+    "particle": "metaplay:block/crate"
   },
   "render_type": "solid"
 }

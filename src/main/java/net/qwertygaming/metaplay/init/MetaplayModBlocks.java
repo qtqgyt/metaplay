@@ -5,6 +5,7 @@
 package net.qwertygaming.metaplay.init;
 
 import net.qwertygaming.metaplay.block.MoltenIronBlock;
+import net.qwertygaming.metaplay.block.IronCrateBlock;
 import net.qwertygaming.metaplay.block.GrinderBlock;
 import net.qwertygaming.metaplay.block.CrateBlock;
 import net.qwertygaming.metaplay.MetaplayMod;
@@ -20,4 +21,5 @@ public class MetaplayModBlocks {
 	public static final RegistryObject<Block> GRINDER = REGISTRY.register("grinder", () -> new GrinderBlock());
 	public static final RegistryObject<Block> MOLTEN_IRON = REGISTRY.register("molten_iron", () -> new MoltenIronBlock());
 	public static final RegistryObject<Block> CRATE = REGISTRY.register("crate", () -> new CrateBlock());
+	public static final RegistryObject<Block> IRON_CRATE = REGISTRY.register("iron_crate", () -> new IronCrateBlock());
 }

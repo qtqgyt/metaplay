@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "metaplay:items/netherite_diamond_ingot"
+    "layer0": "metaplay:item/netherite_diamond_ingot"
   }
 }

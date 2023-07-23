@@ -24,7 +24,7 @@ import java.util.function.Supplier;
 import java.util.Map;
 import java.util.HashMap;
 
-public class CrateInventoryMenu extends AbstractContainerMenu implements Supplier<Map<Integer, Slot>> {
+public class IronCrateInventoryMenu extends AbstractContainerMenu implements Supplier<Map<Integer, Slot>> {
 	public final static HashMap<String, Object> guistate = new HashMap<>();
 	public final Level world;
 	public final Player entity;
@@ -33,11 +33,11 @@ public class CrateInventoryMenu extends AbstractContainerMenu implements Supplie
 	private final Map<Integer, Slot> customSlots = new HashMap<>();
 	private boolean bound = false;
 
-	public CrateInventoryMenu(int id, Inventory inv, FriendlyByteBuf extraData) {
-		super(MetaplayModMenus.CRATE_INVENTORY.get(), id);
+	public IronCrateInventoryMenu(int id, Inventory inv, FriendlyByteBuf extraData) {
+		super(MetaplayModMenus.IRON_CRATE_INVENTORY.get(), id);
 		this.entity = inv.player;
 		this.world = inv.player.level;
-		this.internal = new ItemStackHandler(27);
+		this.internal = new ItemStackHandler(54);
 		BlockPos pos = null;
 		if (extraData != null) {
 			pos = extraData.readBlockPos();
@@ -75,65 +75,119 @@ public class CrateInventoryMenu extends AbstractContainerMenu implements Supplie
 				}
 			}
 		}
-		this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 7, 62) {
+		this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 7, 63) {
 		}));
-		this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 25, 62) {
+		this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 25, 63) {
 		}));
-		this.customSlots.put(2, this.addSlot(new SlotItemHandler(internal, 2, 43, 62) {
+		this.customSlots.put(2, this.addSlot(new SlotItemHandler(internal, 2, 43, 63) {
 		}));
-		this.customSlots.put(3, this.addSlot(new SlotItemHandler(internal, 3, 61, 62) {
+		this.customSlots.put(3, this.addSlot(new SlotItemHandler(internal, 3, 61, 63) {
 		}));
-		this.customSlots.put(4, this.addSlot(new SlotItemHandler(internal, 4, 79, 62) {
+		this.customSlots.put(4, this.addSlot(new SlotItemHandler(internal, 4, 79, 63) {
 		}));
-		this.customSlots.put(5, this.addSlot(new SlotItemHandler(internal, 5, 97, 62) {
+		this.customSlots.put(5, this.addSlot(new SlotItemHandler(internal, 5, 97, 63) {
 		}));
-		this.customSlots.put(6, this.addSlot(new SlotItemHandler(internal, 6, 115, 62) {
+		this.customSlots.put(6, this.addSlot(new SlotItemHandler(internal, 6, 115, 63) {
 		}));
-		this.customSlots.put(7, this.addSlot(new SlotItemHandler(internal, 7, 133, 62) {
+		this.customSlots.put(7, this.addSlot(new SlotItemHandler(internal, 7, 133, 63) {
 		}));
-		this.customSlots.put(8, this.addSlot(new SlotItemHandler(internal, 8, 151, 62) {
+		this.customSlots.put(8, this.addSlot(new SlotItemHandler(internal, 8, 151, 63) {
 		}));
-		this.customSlots.put(9, this.addSlot(new SlotItemHandler(internal, 9, 7, 44) {
+		this.customSlots.put(9, this.addSlot(new SlotItemHandler(internal, 9, 7, 45) {
 		}));
-		this.customSlots.put(10, this.addSlot(new SlotItemHandler(internal, 10, 25, 44) {
+		this.customSlots.put(10, this.addSlot(new SlotItemHandler(internal, 10, 25, 45) {
 		}));
-		this.customSlots.put(11, this.addSlot(new SlotItemHandler(internal, 11, 43, 44) {
+		this.customSlots.put(11, this.addSlot(new SlotItemHandler(internal, 11, 43, 45) {
 		}));
-		this.customSlots.put(12, this.addSlot(new SlotItemHandler(internal, 12, 61, 44) {
+		this.customSlots.put(12, this.addSlot(new SlotItemHandler(internal, 12, 61, 45) {
 		}));
-		this.customSlots.put(13, this.addSlot(new SlotItemHandler(internal, 13, 79, 44) {
+		this.customSlots.put(13, this.addSlot(new SlotItemHandler(internal, 13, 79, 45) {
 		}));
-		this.customSlots.put(14, this.addSlot(new SlotItemHandler(internal, 14, 97, 44) {
+		this.customSlots.put(14, this.addSlot(new SlotItemHandler(internal, 14, 97, 45) {
 		}));
-		this.customSlots.put(15, this.addSlot(new SlotItemHandler(internal, 15, 115, 44) {
+		this.customSlots.put(15, this.addSlot(new SlotItemHandler(internal, 15, 115, 45) {
 		}));
-		this.customSlots.put(16, this.addSlot(new SlotItemHandler(internal, 16, 133, 44) {
+		this.customSlots.put(16, this.addSlot(new SlotItemHandler(internal, 16, 133, 45) {
 		}));
-		this.customSlots.put(17, this.addSlot(new SlotItemHandler(internal, 17, 151, 44) {
+		this.customSlots.put(17, this.addSlot(new SlotItemHandler(internal, 17, 151, 45) {
 		}));
-		this.customSlots.put(18, this.addSlot(new SlotItemHandler(internal, 18, 7, 26) {
+		this.customSlots.put(18, this.addSlot(new SlotItemHandler(internal, 18, 7, 27) {
 		}));
-		this.customSlots.put(19, this.addSlot(new SlotItemHandler(internal, 19, 25, 26) {
+		this.customSlots.put(19, this.addSlot(new SlotItemHandler(internal, 19, 25, 27) {
 		}));
-		this.customSlots.put(20, this.addSlot(new SlotItemHandler(internal, 20, 43, 26) {
+		this.customSlots.put(20, this.addSlot(new SlotItemHandler(internal, 20, 43, 27) {
 		}));
-		this.customSlots.put(21, this.addSlot(new SlotItemHandler(internal, 21, 61, 26) {
+		this.customSlots.put(21, this.addSlot(new SlotItemHandler(internal, 21, 61, 27) {
 		}));
-		this.customSlots.put(22, this.addSlot(new SlotItemHandler(internal, 22, 79, 26) {
+		this.customSlots.put(22, this.addSlot(new SlotItemHandler(internal, 22, 79, 27) {
 		}));
-		this.customSlots.put(23, this.addSlot(new SlotItemHandler(internal, 23, 97, 26) {
+		this.customSlots.put(23, this.addSlot(new SlotItemHandler(internal, 23, 97, 27) {
 		}));
-		this.customSlots.put(24, this.addSlot(new SlotItemHandler(internal, 24, 115, 26) {
+		this.customSlots.put(24, this.addSlot(new SlotItemHandler(internal, 24, 115, 27) {
 		}));
-		this.customSlots.put(25, this.addSlot(new SlotItemHandler(internal, 25, 133, 26) {
+		this.customSlots.put(25, this.addSlot(new SlotItemHandler(internal, 25, 133, 27) {
 		}));
-		this.customSlots.put(26, this.addSlot(new SlotItemHandler(internal, 26, 151, 26) {
+		this.customSlots.put(26, this.addSlot(new SlotItemHandler(internal, 26, 151, 27) {
+		}));
+		this.customSlots.put(27, this.addSlot(new SlotItemHandler(internal, 27, 7, 81) {
+		}));
+		this.customSlots.put(28, this.addSlot(new SlotItemHandler(internal, 28, 25, 81) {
+		}));
+		this.customSlots.put(29, this.addSlot(new SlotItemHandler(internal, 29, 43, 81) {
+		}));
+		this.customSlots.put(30, this.addSlot(new SlotItemHandler(internal, 30, 61, 81) {
+		}));
+		this.customSlots.put(31, this.addSlot(new SlotItemHandler(internal, 31, 79, 81) {
+		}));
+		this.customSlots.put(32, this.addSlot(new SlotItemHandler(internal, 32, 97, 81) {
+		}));
+		this.customSlots.put(33, this.addSlot(new SlotItemHandler(internal, 33, 115, 81) {
+		}));
+		this.customSlots.put(34, this.addSlot(new SlotItemHandler(internal, 34, 133, 81) {
+		}));
+		this.customSlots.put(35, this.addSlot(new SlotItemHandler(internal, 35, 151, 81) {
+		}));
+		this.customSlots.put(36, this.addSlot(new SlotItemHandler(internal, 36, 7, 99) {
+		}));
+		this.customSlots.put(37, this.addSlot(new SlotItemHandler(internal, 37, 25, 99) {
+		}));
+		this.customSlots.put(38, this.addSlot(new SlotItemHandler(internal, 38, 43, 99) {
+		}));
+		this.customSlots.put(39, this.addSlot(new SlotItemHandler(internal, 39, 61, 99) {
+		}));
+		this.customSlots.put(40, this.addSlot(new SlotItemHandler(internal, 40, 79, 99) {
+		}));
+		this.customSlots.put(41, this.addSlot(new SlotItemHandler(internal, 41, 97, 99) {
+		}));
+		this.customSlots.put(42, this.addSlot(new SlotItemHandler(internal, 42, 115, 99) {
+		}));
+		this.customSlots.put(43, this.addSlot(new SlotItemHandler(internal, 43, 133, 99) {
+		}));
+		this.customSlots.put(44, this.addSlot(new SlotItemHandler(internal, 44, 151, 99) {
+		}));
+		this.customSlots.put(45, this.addSlot(new SlotItemHandler(internal, 45, 7, 117) {
+		}));
+		this.customSlots.put(46, this.addSlot(new SlotItemHandler(internal, 46, 25, 117) {
+		}));
+		this.customSlots.put(47, this.addSlot(new SlotItemHandler(internal, 47, 43, 117) {
+		}));
+		this.customSlots.put(48, this.addSlot(new SlotItemHandler(internal, 48, 61, 117) {
+		}));
+		this.customSlots.put(49, this.addSlot(new SlotItemHandler(internal, 49, 79, 117) {
+		}));
+		this.customSlots.put(50, this.addSlot(new SlotItemHandler(internal, 50, 97, 117) {
+		}));
+		this.customSlots.put(51, this.addSlot(new SlotItemHandler(internal, 51, 115, 117) {
+		}));
+		this.customSlots.put(52, this.addSlot(new SlotItemHandler(internal, 52, 133, 117) {
+		}));
+		this.customSlots.put(53, this.addSlot(new SlotItemHandler(internal, 53, 151, 117) {
 		}));
 		for (int si = 0; si < 3; ++si)
 			for (int sj = 0; sj < 9; ++sj)
-				this.addSlot(new Slot(inv, sj + (si + 1) * 9, 0 + 8 + sj * 18, 0 + 84 + si * 18));
+				this.addSlot(new Slot(inv, sj + (si + 1) * 9, 0 + 8 + sj * 18, 56 + 84 + si * 18));
 		for (int si = 0; si < 9; ++si)
-			this.addSlot(new Slot(inv, si, 0 + 8 + si * 18, 0 + 142));
+			this.addSlot(new Slot(inv, si, 0 + 8 + si * 18, 56 + 142));
 	}
 
 	@Override
@@ -148,16 +202,16 @@ public class CrateInventoryMenu extends AbstractContainerMenu implements Supplie
 		if (slot != null && slot.hasItem()) {
 			ItemStack itemstack1 = slot.getItem();
 			itemstack = itemstack1.copy();
-			if (index < 27) {
-				if (!this.moveItemStackTo(itemstack1, 27, this.slots.size(), true))
+			if (index < 54) {
+				if (!this.moveItemStackTo(itemstack1, 54, this.slots.size(), true))
 					return ItemStack.EMPTY;
 				slot.onQuickCraft(itemstack1, itemstack);
-			} else if (!this.moveItemStackTo(itemstack1, 0, 27, false)) {
-				if (index < 27 + 27) {
-					if (!this.moveItemStackTo(itemstack1, 27 + 27, this.slots.size(), true))
+			} else if (!this.moveItemStackTo(itemstack1, 0, 54, false)) {
+				if (index < 54 + 27) {
+					if (!this.moveItemStackTo(itemstack1, 54 + 27, this.slots.size(), true))
 						return ItemStack.EMPTY;
 				} else {
-					if (!this.moveItemStackTo(itemstack1, 27, 27 + 27, false))
+					if (!this.moveItemStackTo(itemstack1, 54, 54 + 27, false))
 						return ItemStack.EMPTY;
 				}
 				return ItemStack.EMPTY;

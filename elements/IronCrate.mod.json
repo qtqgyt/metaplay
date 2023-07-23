@@ -2,12 +2,12 @@
   "_fv": 43,
   "_type": "block",
   "definition": {
-    "texture": "crate",
-    "textureTop": "crate",
-    "textureLeft": "crate",
-    "textureFront": "crate",
-    "textureRight": "crate",
-    "textureBack": "crate",
+    "texture": "ironcrate",
+    "textureTop": "ironcrate",
+    "textureLeft": "ironcrate",
+    "textureFront": "ironcrate",
+    "textureRight": "ironcrate",
+    "textureBack": "ironcrate",
     "renderType": 10,
     "customModelName": "Normal",
     "rotationMode": 0,
@@ -33,10 +33,10 @@
         "subtract": false
       }
     ],
-    "name": "Crate",
+    "name": "Iron Crate",
     "specialInfo": [],
-    "hardness": 2.0,
-    "resistance": 3.0,
+    "hardness": 5.0,
+    "resistance": 6.0,
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTab": {
@@ -54,7 +54,7 @@
     "canRedstoneConnect": false,
     "lightOpacity": 15,
     "material": {
-      "value": "WOOD"
+      "value": "IRON"
     },
     "tickRate": 0,
     "tickRandomly": false,
@@ -79,7 +79,7 @@
     "isNotColidable": false,
     "isCustomSoundType": false,
     "soundOnStep": {
-      "value": "WOOD"
+      "value": "METAL"
     },
     "breakSound": {
       "value": ""
@@ -101,7 +101,7 @@
     "breakHarvestLevel": 1,
     "isBonemealable": false,
     "hasInventory": true,
-    "guiBoundTo": "CrateInventory",
+    "guiBoundTo": "IronCrateInventory",
     "openGUIOnRightClick": true,
     "inventorySize": 27,
     "inventoryStackSize": 64,

@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "metaplay:items/ironingotbucket"
+    "layer0": "metaplay:item/ironingotbucket"
   }
 }

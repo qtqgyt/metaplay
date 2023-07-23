@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "metaplay:items/netherite_chestplate"
+    "layer0": "metaplay:item/netherite_chestplate"
   }
 }

@@ -4,8 +4,8 @@
   "definition": {
     "name": "Molten Iron",
     "bucketName": "Molten Iron Bucket",
-    "textureStill": "molteniron",
-    "textureFlowing": "molteniron",
+    "textureStill": "moltenironstill",
+    "textureFlowing": "moltenironflowing",
     "tintType": "No tint",
     "canMultiply": false,
     "flowRate": 5,
@@ -24,10 +24,10 @@
     "generateBucket": true,
     "textureBucket": "",
     "creativeTab": {
-      "value": "MISC"
+      "value": "No creative tab entry"
     },
     "emptySound": {
-      "value": ""
+      "value": "item.bucket.empty_lava"
     },
     "rarity": "UNCOMMON",
     "specialInfo": [],

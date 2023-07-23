@@ -55,7 +55,6 @@ public class MetaplayMod {
 
 	public MetaplayMod() {
 		MinecraftForge.EVENT_BUS.register(this);
-
 		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
 
 		MetaplayModBlocks.REGISTRY.register(bus);
@@ -65,7 +64,6 @@ public class MetaplayMod {
 
 		MetaplayModMobEffects.REGISTRY.register(bus);
 		MetaplayModPotions.REGISTRY.register(bus);
-
 		MetaplayModMenus.REGISTRY.register(bus);
 
 		MetaplayModFluids.REGISTRY.register(bus);

@@ -30,6 +30,8 @@
   "item.metaplay.iron_ingot_bucket": "Iron Ingot Bucket",
   "item.minecraft.splash_potion.effect.healing_potion": "Splash Potion of Healing",
   "gui.metaplay.crate_inventory.label_crate": "Crate",
+  "block.metaplay.iron_crate": "Iron Crate",
+  "gui.metaplay.iron_crate_inventory.label_crate": "Crate",
   "block.metaplay.crate": "Crate",
   "item.ultramod.netherite_diamond_armor_chestplate": "Diamond Infused Netherite Chestplate",
   "effect.metaplay.healing": "Healing",

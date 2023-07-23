@@ -9,7 +9,6 @@ import net.minecraft.world.item.ProjectileWeaponItem;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.entity.projectile.AbstractArrow;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.LivingEntity;
@@ -20,7 +19,7 @@ import net.minecraft.server.level.ServerPlayer;
 
 public class MinigunItem extends Item {
 	public MinigunItem() {
-		super(new Item.Properties().tab(CreativeModeTab.TAB_COMBAT).durability(1561));
+		super(new Item.Properties().durability(1561));
 	}
 
 	@Override
@@ -40,8 +39,7 @@ public class MinigunItem extends Item {
 	}
 
 	@Override
-	public void onUsingTick(ItemStack itemstack, LivingEntity entityLiving, int count) {
-		Level world = entityLiving.level;
+	public void onUseTick(Level world, LivingEntity entityLiving, ItemStack itemstack, int count) {
 		if (!world.isClientSide() && entityLiving instanceof ServerPlayer entity) {
 			double x = entity.getX();
 			double y = entity.getY();

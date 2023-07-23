@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "metaplay:items/gold_dust"
+    "layer0": "metaplay:item/gold_dust"
   }
 }

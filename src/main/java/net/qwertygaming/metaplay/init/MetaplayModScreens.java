@@ -4,6 +4,7 @@
  */
 package net.qwertygaming.metaplay.init;
 
+import net.qwertygaming.metaplay.client.gui.IronCrateInventoryScreen;
 import net.qwertygaming.metaplay.client.gui.GrinderGUIScreen;
 import net.qwertygaming.metaplay.client.gui.CrateInventoryScreen;
 
@@ -21,6 +22,7 @@ public class MetaplayModScreens {
 		event.enqueueWork(() -> {
 			MenuScreens.register(MetaplayModMenus.GRINDER_GUI.get(), GrinderGUIScreen::new);
 			MenuScreens.register(MetaplayModMenus.CRATE_INVENTORY.get(), CrateInventoryScreen::new);
+			MenuScreens.register(MetaplayModMenus.IRON_CRATE_INVENTORY.get(), IronCrateInventoryScreen::new);
 		});
 	}
 }

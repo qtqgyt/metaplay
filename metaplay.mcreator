@@ -399,52 +399,61 @@
           "src/main/java/net/qwertygaming/metaplay/block/entity/CrateBlockEntity.java"
         ]
       }
+    },
+    {
+      "name": "IronCrate",
+      "type": "block",
+      "sortid": 30,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "iron_crate",
+      "metadata": {
+        "files": [
+          "src/main/java/net/qwertygaming/metaplay/block/entity/IronCrateBlockEntity.java",
+          "src/main/java/net/qwertygaming/metaplay/block/IronCrateBlock.java",
+          "src/main/resources/assets/metaplay/blockstates/iron_crate.json",
+          "src/main/resources/assets/metaplay/models/block/iron_crate.json",
+          "src/main/resources/assets/metaplay/models/item/iron_crate.json"
+        ]
+      }
+    },
+    {
+      "name": "IronCrateInventory",
+      "type": "gui",
+      "sortid": 31,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "iron_crate_inventory",
+      "metadata": {
+        "files": [
+          "src/main/java/net/qwertygaming/metaplay/client/gui/IronCrateInventoryScreen.java",
+          "src/main/java/net/qwertygaming/metaplay/world/inventory/IronCrateInventoryMenu.java"
+        ]
+      }
+    },
+    {
+      "name": "CoalPotionEffectEffectStartedapplied",
+      "type": "procedure",
+      "sortid": 32,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "coal_potion_effect_effect_startedapplied",
+      "metadata": {
+        "files": [
+          "src/main/java/net/qwertygaming/metaplay/procedures/CoalPotionEffectEffectStartedappliedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
-    "fr_be": {
-      "item.minecraft.potion.effect.healing_potion": "Potion de soin",
-      "item.ultramod.netherite_diamond_armor_boots": "Bottes en Netherite infusées de diamants",
-      "item.ultramod.minigun": "Minigun",
-      "item.metaplay.netherite_diamond_armor_leggings": "Diamond Infused Netherite Leggings",
-      "block.metaplay.molten_iron": "Molten Iron",
-      "item.minecraft.tipped_arrow.effect.healing_potion": "Flèche de guérison",
-      "item.ultramod.redstone_armor_boots": "Bottes d\u0027armure de redstone",
-      "subtitles.time-ncs": "Credit to Syn Cole - NCS",
-      "item.metaplay.gold_dust": "Gold Dust",
-      "item.metaplay.minigun": "Minigun",
-      "entity.metaplay.zombie_pig": "Zombie Pig",
-      "item.ultramod.netherite_diamond_armor_leggings": "Diamond Infused Netherite Leggings",
-      "item.ultramod.diamond_dust": "Gold Dust",
-      "item.metaplay.netherite_diamond_armor_chestplate": "Diamond Infused Netherite Chestplate",
-      "item.metaplay.netherite_diamond_ingot": "Netherite Diamond Ingot",
-      "item.metaplay.netherite_diamond_armor_helmet": "Diamond Infused Netherite Helmet",
-      "block.ultramod.grinder": "Grinder",
-      "item.ultramod.redstone_armor_helmet": "Redstone Armor Helmet",
-      "fluid.metaplay.molten_iron": "Molten Iron",
-      "item.ultramod.redstone_armor_leggings": "Redstone Armor Leggings",
-      "item.ultramod.netherite_diamond_armor_helmet": "Diamond Infused Netherite Helmet",
-      "item.metaplay.zombie_pig_spawn_egg": "Zombie Pig Spawn Egg",
-      "item.metaplay.diamond_dust": "Gold Dust",
-      "item.ultramod.netherite_diamond_ingot": "Netherite Diamond Ingot",
-      "item.ultramod.redstone_armor_chestplate": "Redstone Armor Body",
-      "block.metaplay.grinder": "Grinder",
-      "item.minecraft.lingering_potion.effect.healing_potion": "Lingering Potion of Healing",
-      "item.metaplay.molten_iron_bucket": "Molten Iron Bucket",
-      "item.metaplay.iron_ingot_bucket": "Iron Ingot Bucket",
-      "item.minecraft.splash_potion.effect.healing_potion": "Splash Potion of Healing",
-      "gui.metaplay.crate_inventory.label_crate": "Crate",
-      "block.metaplay.crate": "Crate",
-      "item.ultramod.netherite_diamond_armor_chestplate": "Diamond Infused Netherite Chestplate",
-      "effect.metaplay.healing": "Healing",
-      "item.metaplay.netherite_diamond_armor_boots": "Diamond Infused Netherite Boots",
-      "item.ultramod.gold_dust": "Gold Dust",
-      "effect.ultramod.healing": "Healing",
-      "subtitles.syncole-time-ncs": "",
-      "subtitles.entity.zombiepig.hurt": ""
-    },
     "en_us": {
       "item.ultramod.netherite_diamond_armor_boots": "Diamond Infused Netherite Boots",
       "item.minecraft.potion.effect.healing_potion": "Potion of Healing",
@@ -477,6 +486,8 @@
       "item.metaplay.iron_ingot_bucket": "Iron Ingot Bucket",
       "item.minecraft.splash_potion.effect.healing_potion": "Splash Potion of Healing",
       "gui.metaplay.crate_inventory.label_crate": "Crate",
+      "block.metaplay.iron_crate": "Iron Crate",
+      "gui.metaplay.iron_crate_inventory.label_crate": "Crate",
       "block.metaplay.crate": "Crate",
       "item.ultramod.netherite_diamond_armor_chestplate": "Diamond Infused Netherite Chestplate",
       "effect.metaplay.healing": "Healing",
@@ -494,7 +505,7 @@
   "workspaceSettings": {
     "modid": "metaplay",
     "modName": "Metaplay",
-    "version": "1.1.2",
+    "version": "1.1.3.2",
     "author": "qwerty_gaming",
     "websiteURL": "https://github.com/qgqtyt/",
     "license": "Academic Free License v3.0",
@@ -505,7 +516,7 @@
     "dependencies": [],
     "dependants": [],
     "mcreatorDependencies": [],
-    "currentGenerator": "forge-1.19.2",
+    "currentGenerator": "forge-1.19.4",
     "credits": "Created using mod maker MCreator - https://mcreator.net/about",
     "modElementsPackage": "net.qwertygaming.metaplay",
     "lockBaseModFiles": false
