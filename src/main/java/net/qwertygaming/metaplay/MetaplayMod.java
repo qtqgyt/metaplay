@@ -25,7 +25,6 @@ import net.qwertygaming.metaplay.init.MetaplayModFluidTypes;
 import net.qwertygaming.metaplay.init.MetaplayModEntities;
 import net.qwertygaming.metaplay.init.MetaplayModBlocks;
 import net.qwertygaming.metaplay.init.MetaplayModBlockEntities;
-import net.qwertygaming.metaplay.init.MetaplayModBiomes;
 
 import net.minecraftforge.network.simple.SimpleChannel;
 import net.minecraftforge.network.NetworkRegistry;
@@ -68,7 +67,6 @@ public class MetaplayMod {
 		MetaplayModPotions.REGISTRY.register(bus);
 
 		MetaplayModMenus.REGISTRY.register(bus);
-		MetaplayModBiomes.REGISTRY.register(bus);
 
 		MetaplayModFluids.REGISTRY.register(bus);
 		MetaplayModFluidTypes.REGISTRY.register(bus);

@@ -354,100 +354,6 @@
       }
     },
     {
-      "name": "DimensionXFiller",
-      "type": "block",
-      "sortid": 24,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "dimension_x_filler",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/metaplay/models/item/dimension_x_filler.json",
-          "src/main/resources/assets/metaplay/blockstates/dimension_x_filler.json",
-          "src/main/resources/assets/metaplay/models/block/dimension_x_filler.json",
-          "src/main/java/net/qwertygaming/metaplay/block/DimensionXFillerBlock.java"
-        ]
-      }
-    },
-    {
-      "name": "DirtBlocks",
-      "type": "tag",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "dirt_blocks",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/minecraft/tags/blocks/dirt.json"
-        ]
-      }
-    },
-    {
-      "name": "TheShadowlands",
-      "type": "biome",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "the_shadowlands",
-      "metadata": {
-        "files": [
-          "src/main/java/net/qwertygaming/metaplay/world/biome/TheShadowlandsBiome.java",
-          "src/main/java/net/qwertygaming/metaplay/world/features/treedecorators/TheShadowlandsLeaveDecorator.java",
-          "src/main/java/net/qwertygaming/metaplay/world/features/treedecorators/TheShadowlandsFruitDecorator.java",
-          "src/main/java/net/qwertygaming/metaplay/world/features/treedecorators/TheShadowlandsTrunkDecorator.java"
-        ]
-      }
-    },
-    {
-      "name": "DimensionX",
-      "type": "dimension",
-      "sortid": 25,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "dimension_x",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/metaplay/dimension_type/dimension_x.json",
-          "src/main/resources/data/metaplay/dimension/dimension_x.json",
-          "src/main/resources/assets/metaplay/models/block/dimension_x_portal_ew.json",
-          "src/main/java/net/qwertygaming/metaplay/world/teleporter/DimensionXPortalShape.java",
-          "src/main/java/net/qwertygaming/metaplay/world/dimension/DimensionXDimension.java",
-          "src/main/resources/assets/metaplay/models/block/dimension_x_portal_ns.json",
-          "src/main/java/net/qwertygaming/metaplay/world/teleporter/DimensionXTeleporter.java",
-          "src/main/resources/assets/metaplay/models/item/dimension_x.json",
-          "src/main/java/net/qwertygaming/metaplay/item/DimensionXItem.java",
-          "src/main/resources/assets/metaplay/blockstates/dimension_x_portal.json",
-          "src/main/java/net/qwertygaming/metaplay/block/DimensionXPortalBlock.java"
-        ]
-      }
-    },
-    {
-      "name": "TheUnknown",
-      "type": "achievement",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "the_unknown",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/metaplay/advancements/the_unknown.json"
-        ]
-      }
-    },
-    {
-      "name": "DsatEndBlock",
-      "type": "block",
-      "sortid": 26,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "dsat_end_block",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/metaplay/models/block/dsat_end_block.json",
-          "src/main/resources/assets/metaplay/models/item/dsat_end_block.json",
-          "src/main/resources/assets/metaplay/blockstates/dsat_end_block.json",
-          "src/main/java/net/qwertygaming/metaplay/block/DsatEndBlockBlock.java"
-        ]
-      }
-    },
-    {
       "name": "ZombiePig",
       "type": "livingentity",
       "sortid": 27,
@@ -505,7 +411,6 @@
       "item.metaplay.netherite_diamond_armor_leggings": "Diamond Infused Netherite Leggings",
       "block.metaplay.molten_iron": "Molten Iron",
       "item.minecraft.tipped_arrow.effect.healing_potion": "Flèche de guérison",
-      "block.metaplay.dimension_x_filler": "Dimension X Filler",
       "item.ultramod.redstone_armor_boots": "Bottes d\u0027armure de redstone",
       "subtitles.time-ncs": "Credit to Syn Cole - NCS",
       "item.metaplay.gold_dust": "Gold Dust",
@@ -515,29 +420,24 @@
       "item.ultramod.diamond_dust": "Gold Dust",
       "item.metaplay.netherite_diamond_armor_chestplate": "Diamond Infused Netherite Chestplate",
       "item.metaplay.netherite_diamond_ingot": "Netherite Diamond Ingot",
-      "advancements.the_unknown.descr": "You can enter Dimension X... No one has come out alive.",
       "item.metaplay.netherite_diamond_armor_helmet": "Diamond Infused Netherite Helmet",
       "block.ultramod.grinder": "Grinder",
-      "item.metaplay.dimension_x": "Dimension X Portal Igniter",
       "item.ultramod.redstone_armor_helmet": "Redstone Armor Helmet",
       "fluid.metaplay.molten_iron": "Molten Iron",
       "item.ultramod.redstone_armor_leggings": "Redstone Armor Leggings",
       "item.ultramod.netherite_diamond_armor_helmet": "Diamond Infused Netherite Helmet",
       "item.metaplay.zombie_pig_spawn_egg": "Zombie Pig Spawn Egg",
       "item.metaplay.diamond_dust": "Gold Dust",
-      "advancements.the_unknown.title": "The Unknown",
       "item.ultramod.netherite_diamond_ingot": "Netherite Diamond Ingot",
       "item.ultramod.redstone_armor_chestplate": "Redstone Armor Body",
       "block.metaplay.grinder": "Grinder",
       "item.minecraft.lingering_potion.effect.healing_potion": "Lingering Potion of Healing",
       "item.metaplay.molten_iron_bucket": "Molten Iron Bucket",
-      "biome.metaplay.the_shadowlands": "The Shadowlands",
       "item.metaplay.iron_ingot_bucket": "Iron Ingot Bucket",
       "item.minecraft.splash_potion.effect.healing_potion": "Splash Potion of Healing",
       "gui.metaplay.crate_inventory.label_crate": "Crate",
       "block.metaplay.crate": "Crate",
       "item.ultramod.netherite_diamond_armor_chestplate": "Diamond Infused Netherite Chestplate",
-      "block.metaplay.dsat_end_block": "Void Stone",
       "effect.metaplay.healing": "Healing",
       "item.metaplay.netherite_diamond_armor_boots": "Diamond Infused Netherite Boots",
       "item.ultramod.gold_dust": "Gold Dust",
@@ -552,7 +452,6 @@
       "item.metaplay.netherite_diamond_armor_leggings": "Diamond Infused Netherite Leggings",
       "block.metaplay.molten_iron": "Molten Iron",
       "item.minecraft.tipped_arrow.effect.healing_potion": "Arrow of Healing",
-      "block.metaplay.dimension_x_filler": "Dimension X Filler",
       "item.ultramod.redstone_armor_boots": "Redstone Armor Boots",
       "subtitles.time-ncs": "Credit to Syn Cole - NCS",
       "item.metaplay.gold_dust": "Gold Dust",
@@ -562,29 +461,24 @@
       "item.ultramod.diamond_dust": "Gold Dust",
       "item.metaplay.netherite_diamond_armor_chestplate": "Diamond Infused Netherite Chestplate",
       "item.metaplay.netherite_diamond_ingot": "Netherite Diamond Ingot",
-      "advancements.the_unknown.descr": "You can enter Dimension X... No one has come out alive.",
       "item.metaplay.netherite_diamond_armor_helmet": "Diamond Infused Netherite Helmet",
       "block.ultramod.grinder": "Grinder",
-      "item.metaplay.dimension_x": "Dimension X Portal Igniter",
       "item.ultramod.redstone_armor_helmet": "Redstone Armor Helmet",
       "fluid.metaplay.molten_iron": "Molten Iron",
       "item.ultramod.redstone_armor_leggings": "Redstone Armor Leggings",
       "item.ultramod.netherite_diamond_armor_helmet": "Diamond Infused Netherite Helmet",
       "item.metaplay.zombie_pig_spawn_egg": "Zombie Pig Spawn Egg",
       "item.metaplay.diamond_dust": "Gold Dust",
-      "advancements.the_unknown.title": "The Unknown",
       "item.ultramod.netherite_diamond_ingot": "Netherite Diamond Ingot",
       "item.ultramod.redstone_armor_chestplate": "Redstone Armor Body",
       "block.metaplay.grinder": "Grinder",
       "item.minecraft.lingering_potion.effect.healing_potion": "Lingering Potion of Healing",
       "item.metaplay.molten_iron_bucket": "Molten Iron Bucket",
-      "biome.metaplay.the_shadowlands": "The Shadowlands",
       "item.metaplay.iron_ingot_bucket": "Iron Ingot Bucket",
       "item.minecraft.splash_potion.effect.healing_potion": "Splash Potion of Healing",
       "gui.metaplay.crate_inventory.label_crate": "Crate",
       "block.metaplay.crate": "Crate",
       "item.ultramod.netherite_diamond_armor_chestplate": "Diamond Infused Netherite Chestplate",
-      "block.metaplay.dsat_end_block": "Void Stone",
       "effect.metaplay.healing": "Healing",
       "item.metaplay.netherite_diamond_armor_boots": "Diamond Infused Netherite Boots",
       "item.ultramod.gold_dust": "Gold Dust",
