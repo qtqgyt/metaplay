@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "minecraft:netherite_leggings"
+  },
+  "addition": {
+    "item": "metaplay:diamond_dust"
+  },
+  "result": {
+    "item": "metaplay:netherite_diamond_armor_leggings"
+  }
+}

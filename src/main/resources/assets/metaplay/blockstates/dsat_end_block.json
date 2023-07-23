@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "metaplay:block/dsat_end_block"
+    }
+  }
+}

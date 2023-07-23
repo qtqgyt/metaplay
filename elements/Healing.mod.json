@@ -1,0 +1,17 @@
+{
+  "_fv": 43,
+  "_type": "potioneffect",
+  "definition": {
+    "effectName": "Healing",
+    "icon": "636105769357948349.png",
+    "color": {
+      "value": -1,
+      "falpha": 0.0
+    },
+    "isInstant": true,
+    "isBad": false,
+    "isBenefitical": true,
+    "renderStatusInInventory": true,
+    "renderStatusInHUD": true
+  }
+}

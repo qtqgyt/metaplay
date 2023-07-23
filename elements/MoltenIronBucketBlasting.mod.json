@@ -1,0 +1,22 @@
+{
+  "_fv": 43,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Blasting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 1.0,
+    "cookingTime": 175,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "blastingInputStack": {
+      "value": "CUSTOM:IronIngotBucket"
+    },
+    "blastingReturnStack": {
+      "value": "CUSTOM:MoltenIron.bucket"
+    },
+    "name": "molten_iron_bucket_blasting",
+    "namespace": "mod"
+  }
+}

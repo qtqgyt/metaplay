@@ -1,0 +1,36 @@
+{
+  "display": {
+    "background": "metaplay:textures/screens/end_portal.png",
+    "icon": {
+      "item": "metaplay:dimension_x_filler"
+    },
+    "title": {
+      "translate": "advancements.the_unknown.title"
+    },
+    "description": {
+      "translate": "advancements.the_unknown.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "the_unknown": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "metaplay:dimension_x"
+            ],
+            "count": {
+              "min": 1,
+              "max": 9999
+            }
+          }
+        ]
+      }
+    }
+  }
+}

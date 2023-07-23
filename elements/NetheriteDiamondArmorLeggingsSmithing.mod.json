@@ -1,0 +1,25 @@
+{
+  "_fv": 43,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Smithing",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "smithingInputStack": {
+      "value": "Items.NETHERITE_LEGGINGS"
+    },
+    "smithingInputAdditionStack": {
+      "value": "CUSTOM:DiamondDust"
+    },
+    "smithingReturnStack": {
+      "value": "CUSTOM:NetheriteDiamondArmor.legs"
+    },
+    "name": "netherite_diamond_armor_leggings_smithing",
+    "namespace": "mod"
+  }
+}

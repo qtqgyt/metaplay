@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "metaplay:blocks/house1lootbox",
+    "up": "metaplay:blocks/house1lootbox",
+    "north": "metaplay:blocks/house1lootbox",
+    "east": "metaplay:blocks/house1lootbox",
+    "south": "metaplay:blocks/house1lootbox",
+    "west": "metaplay:blocks/house1lootbox",
+    "particle": "metaplay:blocks/house1lootbox"
+  },
+  "render_type": "solid"
+}

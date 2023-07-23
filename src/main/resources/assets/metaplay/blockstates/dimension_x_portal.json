@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "axis=z": {
+      "model": "metaplay:block/dimension_x_portal_ew"
+    },
+    "axis=x": {
+      "model": "metaplay:block/dimension_x_portal_ns"
+    }
+  }
+}

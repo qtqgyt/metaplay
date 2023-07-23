@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "metaplay:block/dimension_x_filler"
+    }
+  }
+}

@@ -1,0 +1,620 @@
+{
+  "mod_elements": [
+    {
+      "name": "Minigun",
+      "type": "rangeditem",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "minigun",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/metaplay/models/item/minigun.json",
+          "src/main/java/net/qwertygaming/metaplay/entity/MinigunEntity.java",
+          "src/main/java/net/qwertygaming/metaplay/item/MinigunItem.java"
+        ]
+      }
+    },
+    {
+      "name": "Grinder",
+      "type": "block",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "grinder",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/metaplay/blockstates/grinder.json",
+          "src/main/resources/assets/metaplay/models/item/grinder.json",
+          "src/main/java/net/qwertygaming/metaplay/block/GrinderBlock.java",
+          "src/main/resources/assets/metaplay/models/block/grinder.json",
+          "src/main/java/net/qwertygaming/metaplay/block/entity/GrinderBlockEntity.java"
+        ]
+      }
+    },
+    {
+      "name": "GrinderGUIWhileThisGUIIsOpenTick",
+      "type": "procedure",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "grinder_gui_while_this_gui_is_open_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/qwertygaming/metaplay/procedures/GrinderGUIWhileThisGUIIsOpenTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "GrinderGUI",
+      "type": "gui",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "grinder_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/qwertygaming/metaplay/client/gui/GrinderGUIScreen.java",
+          "src/main/java/net/qwertygaming/metaplay/world/inventory/GrinderGUIMenu.java"
+        ]
+      }
+    },
+    {
+      "name": "GoldDust",
+      "type": "item",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "gold_dust",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/metaplay/models/item/gold_dust.json",
+          "src/main/java/net/qwertygaming/metaplay/item/GoldDustItem.java"
+        ]
+      }
+    },
+    {
+      "name": "CraftGrinder",
+      "type": "recipe",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "craft_grinder",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/metaplay/recipes/craft_grinder.json"
+        ]
+      }
+    },
+    {
+      "name": "NotchAppleRecipe",
+      "type": "recipe",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "notch_apple_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/metaplay/recipes/notch_apple_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "Logo",
+      "type": "overlay",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "logo",
+      "metadata": {
+        "files": [
+          "src/main/java/net/qwertygaming/metaplay/client/screens/LogoOverlay.java"
+        ]
+      }
+    },
+    {
+      "name": "NetheriteDiamondArmor",
+      "type": "armor",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "netherite_diamond_armor",
+      "metadata": {
+        "eh": true,
+        "el": true,
+        "eb": true,
+        "ec": true,
+        "files": [
+          "src/main/resources/assets/metaplay/models/item/netherite_diamond_armor_leggings.json",
+          "src/main/resources/assets/metaplay/models/item/netherite_diamond_armor_boots.json",
+          "src/main/resources/assets/metaplay/models/item/netherite_diamond_armor_chestplate.json",
+          "src/main/resources/assets/metaplay/models/item/netherite_diamond_armor_helmet.json",
+          "src/main/java/net/qwertygaming/metaplay/item/NetheriteDiamondArmorItem.java"
+        ]
+      }
+    },
+    {
+      "name": "DiamondDust",
+      "type": "item",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "diamond_dust",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/metaplay/models/item/diamond_dust.json",
+          "src/main/java/net/qwertygaming/metaplay/item/DiamondDustItem.java"
+        ]
+      }
+    },
+    {
+      "name": "NetheriteDiamondIngot",
+      "type": "item",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "netherite_diamond_ingot",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/metaplay/models/item/netherite_diamond_ingot.json",
+          "src/main/java/net/qwertygaming/metaplay/item/NetheriteDiamondIngotItem.java"
+        ]
+      }
+    },
+    {
+      "name": "NetheriteDiamondCraftIngot",
+      "type": "recipe",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "netherite_diamond_craft_ingot",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/metaplay/recipes/netherite_diamond_craft_ingot.json"
+        ]
+      }
+    },
+    {
+      "name": "NetheriteDiamondArmorHelmetSmithing",
+      "type": "recipe",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "netherite_diamond_armor_helmet_smithing",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/metaplay/recipes/netherite_diamond_armor_helmet_smithing.json"
+        ]
+      }
+    },
+    {
+      "name": "NetheriteDiamondArmorChestplateSmithing",
+      "type": "recipe",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "netherite_diamond_armor_chestplate_smithing",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/metaplay/recipes/netherite_diamond_armor_chestplate_smithing.json"
+        ]
+      }
+    },
+    {
+      "name": "NetheriteDiamondArmorLeggingsSmithing",
+      "type": "recipe",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "netherite_diamond_armor_leggings_smithing",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/metaplay/recipes/netherite_diamond_armor_leggings_smithing.json"
+        ]
+      }
+    },
+    {
+      "name": "NetheriteDiamondArmorBootsSmithing",
+      "type": "recipe",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "netherite_diamond_armor_boots_smithing",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/metaplay/recipes/netherite_diamond_armor_boots_smithing.json"
+        ]
+      }
+    },
+    {
+      "name": "Healing",
+      "type": "potioneffect",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "healing",
+      "metadata": {
+        "files": [
+          "src/main/java/net/qwertygaming/metaplay/potion/HealingMobEffect.java"
+        ]
+      }
+    },
+    {
+      "name": "HealingEffectStartedapplied",
+      "type": "procedure",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "healing_effect_startedapplied",
+      "metadata": {
+        "files": [
+          "src/main/java/net/qwertygaming/metaplay/procedures/HealingEffectStartedappliedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "HealingPotion",
+      "type": "potion",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "healing_potion",
+      "metadata": {
+        "files": []
+      }
+    },
+    {
+      "name": "MoltenIron",
+      "type": "fluid",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "molten_iron",
+      "metadata": {
+        "files": [
+          "src/main/java/net/qwertygaming/metaplay/fluid/MoltenIronFluid.java",
+          "src/main/resources/assets/metaplay/blockstates/molten_iron.json",
+          "src/main/java/net/qwertygaming/metaplay/block/MoltenIronBlock.java",
+          "src/main/java/net/qwertygaming/metaplay/fluid/types/MoltenIronFluidType.java",
+          "src/main/java/net/qwertygaming/metaplay/item/MoltenIronItem.java",
+          "src/main/resources/assets/metaplay/models/item/molten_iron_bucket.json",
+          "src/main/resources/assets/metaplay/models/block/molten_iron.json"
+        ]
+      }
+    },
+    {
+      "name": "MoltenIronMobplayerCollidesBlock",
+      "type": "procedure",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "molten_iron_mobplayer_collides_block",
+      "metadata": {
+        "files": [
+          "src/main/java/net/qwertygaming/metaplay/procedures/MoltenIronMobplayerCollidesBlockProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "IronIngotBucket",
+      "type": "item",
+      "sortid": 21,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "iron_ingot_bucket",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/metaplay/models/item/iron_ingot_bucket.json",
+          "src/main/java/net/qwertygaming/metaplay/item/IronIngotBucketItem.java"
+        ]
+      }
+    },
+    {
+      "name": "MoltenIronBucketSmelting",
+      "type": "recipe",
+      "sortid": 22,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "molten_iron_bucket_smelting",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/metaplay/recipes/molten_iron_bucket_smelting.json"
+        ]
+      }
+    },
+    {
+      "name": "MoltenIronBucketBlasting",
+      "type": "recipe",
+      "sortid": 23,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "molten_iron_bucket_blasting",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/metaplay/recipes/molten_iron_bucket_blasting.json"
+        ]
+      }
+    },
+    {
+      "name": "DimensionXFiller",
+      "type": "block",
+      "sortid": 24,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dimension_x_filler",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/metaplay/models/item/dimension_x_filler.json",
+          "src/main/resources/assets/metaplay/blockstates/dimension_x_filler.json",
+          "src/main/resources/assets/metaplay/models/block/dimension_x_filler.json",
+          "src/main/java/net/qwertygaming/metaplay/block/DimensionXFillerBlock.java"
+        ]
+      }
+    },
+    {
+      "name": "DirtBlocks",
+      "type": "tag",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dirt_blocks",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/tags/blocks/dirt.json"
+        ]
+      }
+    },
+    {
+      "name": "TheShadowlands",
+      "type": "biome",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "the_shadowlands",
+      "metadata": {
+        "files": [
+          "src/main/java/net/qwertygaming/metaplay/world/biome/TheShadowlandsBiome.java",
+          "src/main/java/net/qwertygaming/metaplay/world/features/treedecorators/TheShadowlandsLeaveDecorator.java",
+          "src/main/java/net/qwertygaming/metaplay/world/features/treedecorators/TheShadowlandsFruitDecorator.java",
+          "src/main/java/net/qwertygaming/metaplay/world/features/treedecorators/TheShadowlandsTrunkDecorator.java"
+        ]
+      }
+    },
+    {
+      "name": "DimensionX",
+      "type": "dimension",
+      "sortid": 25,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dimension_x",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/metaplay/dimension_type/dimension_x.json",
+          "src/main/resources/data/metaplay/dimension/dimension_x.json",
+          "src/main/resources/assets/metaplay/models/block/dimension_x_portal_ew.json",
+          "src/main/java/net/qwertygaming/metaplay/world/teleporter/DimensionXPortalShape.java",
+          "src/main/java/net/qwertygaming/metaplay/world/dimension/DimensionXDimension.java",
+          "src/main/resources/assets/metaplay/models/block/dimension_x_portal_ns.json",
+          "src/main/java/net/qwertygaming/metaplay/world/teleporter/DimensionXTeleporter.java",
+          "src/main/resources/assets/metaplay/models/item/dimension_x.json",
+          "src/main/java/net/qwertygaming/metaplay/item/DimensionXItem.java",
+          "src/main/resources/assets/metaplay/blockstates/dimension_x_portal.json",
+          "src/main/java/net/qwertygaming/metaplay/block/DimensionXPortalBlock.java"
+        ]
+      }
+    },
+    {
+      "name": "TheUnknown",
+      "type": "achievement",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "the_unknown",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/metaplay/advancements/the_unknown.json"
+        ]
+      }
+    },
+    {
+      "name": "DsatEndBlock",
+      "type": "block",
+      "sortid": 26,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dsat_end_block",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/metaplay/models/block/dsat_end_block.json",
+          "src/main/resources/assets/metaplay/models/item/dsat_end_block.json",
+          "src/main/resources/assets/metaplay/blockstates/dsat_end_block.json",
+          "src/main/java/net/qwertygaming/metaplay/block/DsatEndBlockBlock.java"
+        ]
+      }
+    },
+    {
+      "name": "ZombiePig",
+      "type": "livingentity",
+      "sortid": 27,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "zombie_pig",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/metaplay/forge/biome_modifier/zombie_pig_biome_modifier.json",
+          "src/main/java/net/qwertygaming/metaplay/client/renderer/ZombiePigRenderer.java",
+          "src/main/resources/assets/metaplay/models/item/zombie_pig_spawn_egg.json",
+          "src/main/java/net/qwertygaming/metaplay/entity/ZombiePigEntity.java"
+        ]
+      }
+    },
+    {
+      "name": "CrateInventory",
+      "type": "gui",
+      "sortid": 28,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crate_inventory",
+      "metadata": {
+        "files": [
+          "src/main/java/net/qwertygaming/metaplay/world/inventory/CrateInventoryMenu.java",
+          "src/main/java/net/qwertygaming/metaplay/client/gui/CrateInventoryScreen.java"
+        ]
+      }
+    },
+    {
+      "name": "Crate",
+      "type": "block",
+      "sortid": 29,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crate",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/metaplay/models/item/crate.json",
+          "src/main/resources/assets/metaplay/blockstates/crate.json",
+          "src/main/java/net/qwertygaming/metaplay/block/CrateBlock.java",
+          "src/main/resources/assets/metaplay/models/block/crate.json",
+          "src/main/java/net/qwertygaming/metaplay/block/entity/CrateBlockEntity.java"
+        ]
+      }
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [],
+  "language_map": {
+    "fr_be": {
+      "item.minecraft.potion.effect.healing_potion": "Potion de soin",
+      "item.ultramod.netherite_diamond_armor_boots": "Bottes en Netherite infusées de diamants",
+      "item.ultramod.minigun": "Minigun",
+      "item.metaplay.netherite_diamond_armor_leggings": "Diamond Infused Netherite Leggings",
+      "block.metaplay.molten_iron": "Molten Iron",
+      "item.minecraft.tipped_arrow.effect.healing_potion": "Flèche de guérison",
+      "block.metaplay.dimension_x_filler": "Dimension X Filler",
+      "item.ultramod.redstone_armor_boots": "Bottes d\u0027armure de redstone",
+      "subtitles.time-ncs": "Credit to Syn Cole - NCS",
+      "item.metaplay.gold_dust": "Gold Dust",
+      "item.metaplay.minigun": "Minigun",
+      "entity.metaplay.zombie_pig": "Zombie Pig",
+      "item.ultramod.netherite_diamond_armor_leggings": "Diamond Infused Netherite Leggings",
+      "item.ultramod.diamond_dust": "Gold Dust",
+      "item.metaplay.netherite_diamond_armor_chestplate": "Diamond Infused Netherite Chestplate",
+      "item.metaplay.netherite_diamond_ingot": "Netherite Diamond Ingot",
+      "advancements.the_unknown.descr": "You can enter Dimension X... No one has come out alive.",
+      "item.metaplay.netherite_diamond_armor_helmet": "Diamond Infused Netherite Helmet",
+      "block.ultramod.grinder": "Grinder",
+      "item.metaplay.dimension_x": "Dimension X Portal Igniter",
+      "item.ultramod.redstone_armor_helmet": "Redstone Armor Helmet",
+      "fluid.metaplay.molten_iron": "Molten Iron",
+      "item.ultramod.redstone_armor_leggings": "Redstone Armor Leggings",
+      "item.ultramod.netherite_diamond_armor_helmet": "Diamond Infused Netherite Helmet",
+      "item.metaplay.zombie_pig_spawn_egg": "Zombie Pig Spawn Egg",
+      "item.metaplay.diamond_dust": "Gold Dust",
+      "advancements.the_unknown.title": "The Unknown",
+      "item.ultramod.netherite_diamond_ingot": "Netherite Diamond Ingot",
+      "item.ultramod.redstone_armor_chestplate": "Redstone Armor Body",
+      "block.metaplay.grinder": "Grinder",
+      "item.minecraft.lingering_potion.effect.healing_potion": "Lingering Potion of Healing",
+      "item.metaplay.molten_iron_bucket": "Molten Iron Bucket",
+      "biome.metaplay.the_shadowlands": "The Shadowlands",
+      "item.metaplay.iron_ingot_bucket": "Iron Ingot Bucket",
+      "item.minecraft.splash_potion.effect.healing_potion": "Splash Potion of Healing",
+      "gui.metaplay.crate_inventory.label_crate": "Crate",
+      "block.metaplay.crate": "Crate",
+      "item.ultramod.netherite_diamond_armor_chestplate": "Diamond Infused Netherite Chestplate",
+      "block.metaplay.dsat_end_block": "Void Stone",
+      "effect.metaplay.healing": "Healing",
+      "item.metaplay.netherite_diamond_armor_boots": "Diamond Infused Netherite Boots",
+      "item.ultramod.gold_dust": "Gold Dust",
+      "effect.ultramod.healing": "Healing",
+      "subtitles.syncole-time-ncs": "",
+      "subtitles.entity.zombiepig.hurt": ""
+    },
+    "en_us": {
+      "item.ultramod.netherite_diamond_armor_boots": "Diamond Infused Netherite Boots",
+      "item.minecraft.potion.effect.healing_potion": "Potion of Healing",
+      "item.ultramod.minigun": "Minigun",
+      "item.metaplay.netherite_diamond_armor_leggings": "Diamond Infused Netherite Leggings",
+      "block.metaplay.molten_iron": "Molten Iron",
+      "item.minecraft.tipped_arrow.effect.healing_potion": "Arrow of Healing",
+      "block.metaplay.dimension_x_filler": "Dimension X Filler",
+      "item.ultramod.redstone_armor_boots": "Redstone Armor Boots",
+      "subtitles.time-ncs": "Credit to Syn Cole - NCS",
+      "item.metaplay.gold_dust": "Gold Dust",
+      "item.metaplay.minigun": "Minigun",
+      "entity.metaplay.zombie_pig": "Zombie Pig",
+      "item.ultramod.netherite_diamond_armor_leggings": "Diamond Infused Netherite Leggings",
+      "item.ultramod.diamond_dust": "Gold Dust",
+      "item.metaplay.netherite_diamond_armor_chestplate": "Diamond Infused Netherite Chestplate",
+      "item.metaplay.netherite_diamond_ingot": "Netherite Diamond Ingot",
+      "advancements.the_unknown.descr": "You can enter Dimension X... No one has come out alive.",
+      "item.metaplay.netherite_diamond_armor_helmet": "Diamond Infused Netherite Helmet",
+      "block.ultramod.grinder": "Grinder",
+      "item.metaplay.dimension_x": "Dimension X Portal Igniter",
+      "item.ultramod.redstone_armor_helmet": "Redstone Armor Helmet",
+      "fluid.metaplay.molten_iron": "Molten Iron",
+      "item.ultramod.redstone_armor_leggings": "Redstone Armor Leggings",
+      "item.ultramod.netherite_diamond_armor_helmet": "Diamond Infused Netherite Helmet",
+      "item.metaplay.zombie_pig_spawn_egg": "Zombie Pig Spawn Egg",
+      "item.metaplay.diamond_dust": "Gold Dust",
+      "advancements.the_unknown.title": "The Unknown",
+      "item.ultramod.netherite_diamond_ingot": "Netherite Diamond Ingot",
+      "item.ultramod.redstone_armor_chestplate": "Redstone Armor Body",
+      "block.metaplay.grinder": "Grinder",
+      "item.minecraft.lingering_potion.effect.healing_potion": "Lingering Potion of Healing",
+      "item.metaplay.molten_iron_bucket": "Molten Iron Bucket",
+      "biome.metaplay.the_shadowlands": "The Shadowlands",
+      "item.metaplay.iron_ingot_bucket": "Iron Ingot Bucket",
+      "item.minecraft.splash_potion.effect.healing_potion": "Splash Potion of Healing",
+      "gui.metaplay.crate_inventory.label_crate": "Crate",
+      "block.metaplay.crate": "Crate",
+      "item.ultramod.netherite_diamond_armor_chestplate": "Diamond Infused Netherite Chestplate",
+      "block.metaplay.dsat_end_block": "Void Stone",
+      "effect.metaplay.healing": "Healing",
+      "item.metaplay.netherite_diamond_armor_boots": "Diamond Infused Netherite Boots",
+      "item.ultramod.gold_dust": "Gold Dust",
+      "effect.ultramod.healing": "Healing",
+      "subtitles.syncole-time-ncs": "",
+      "subtitles.entity.zombiepig.hurt": ""
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "metaplay",
+    "modName": "Metaplay",
+    "version": "1.1.2",
+    "author": "qwerty_gaming",
+    "websiteURL": "https://github.com/qgqtyt/",
+    "license": "Academic Free License v3.0",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "modPicture": "logo",
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.19.2",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
+    "modElementsPackage": "net.qwertygaming.metaplay",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202300224119
+}

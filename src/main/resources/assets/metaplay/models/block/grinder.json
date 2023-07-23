@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "metaplay:blocks/grinder_bottom",
+    "up": "metaplay:blocks/grinder_top",
+    "north": "metaplay:blocks/grinder_side",
+    "east": "metaplay:blocks/grinder_side",
+    "south": "metaplay:blocks/grinder_side",
+    "west": "metaplay:blocks/grinder_side",
+    "particle": "metaplay:blocks/grinder_bottom"
+  },
+  "render_type": "solid"
+}
