@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " 1",
+    "23",
+    " 5"
+  ],
+  "key": {
+    "1": {
+      "item": "minecraft:emerald"
+    },
+    "2": {
+      "item": "minecraft:emerald"
+    },
+    "3": {
+      "item": "metaplay:diamond_trade_blueprint"
+    },
+    "5": {
+      "item": "minecraft:emerald"
+    }
+  },
+  "result": {
+    "item": "minecraft:diamond",
+    "count": 1
+  }
+}

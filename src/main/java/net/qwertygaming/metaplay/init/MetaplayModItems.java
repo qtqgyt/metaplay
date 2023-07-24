@@ -10,6 +10,7 @@ import net.qwertygaming.metaplay.item.MoltenIronItem;
 import net.qwertygaming.metaplay.item.MinigunItem;
 import net.qwertygaming.metaplay.item.IronIngotBucketItem;
 import net.qwertygaming.metaplay.item.GoldDustItem;
+import net.qwertygaming.metaplay.item.DiamondTradeBlueprintItem;
 import net.qwertygaming.metaplay.item.DiamondDustItem;
 import net.qwertygaming.metaplay.MetaplayMod;
 
@@ -38,6 +39,7 @@ public class MetaplayModItems {
 	public static final RegistryObject<Item> ZOMBIE_PIG_SPAWN_EGG = REGISTRY.register("zombie_pig_spawn_egg", () -> new ForgeSpawnEggItem(MetaplayModEntities.ZOMBIE_PIG, -1141355, -16734720, new Item.Properties()));
 	public static final RegistryObject<Item> CRATE = block(MetaplayModBlocks.CRATE);
 	public static final RegistryObject<Item> IRON_CRATE = block(MetaplayModBlocks.IRON_CRATE);
+	public static final RegistryObject<Item> DIAMOND_TRADE_BLUEPRINT = REGISTRY.register("diamond_trade_blueprint", () -> new DiamondTradeBlueprintItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));

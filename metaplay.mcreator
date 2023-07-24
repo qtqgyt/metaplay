@@ -432,21 +432,29 @@
       }
     },
     {
-      "name": "CoalPotionEffectEffectStartedapplied",
-      "type": "procedure",
+      "name": "DiamondTradeBlueprint",
+      "type": "item",
       "sortid": 32,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "coal_potion_effect_effect_startedapplied",
+      "registry_name": "diamond_trade_blueprint",
       "metadata": {
         "files": [
-          "src/main/java/net/qwertygaming/metaplay/procedures/CoalPotionEffectEffectStartedappliedProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
+          "src/main/java/net/qwertygaming/metaplay/item/DiamondTradeBlueprintItem.java",
+          "src/main/resources/assets/metaplay/models/item/diamond_trade_blueprint.json"
+        ]
+      }
+    },
+    {
+      "name": "DiamondTrade",
+      "type": "recipe",
+      "sortid": 33,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "diamond_trade",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/metaplay/recipes/diamond_trade.json"
         ]
       }
     }
@@ -480,6 +488,7 @@
       "item.metaplay.diamond_dust": "Gold Dust",
       "item.ultramod.netherite_diamond_ingot": "Netherite Diamond Ingot",
       "item.ultramod.redstone_armor_chestplate": "Redstone Armor Body",
+      "item.metaplay.diamond_trade_blueprint": "Diamond Trade Blueprint",
       "block.metaplay.grinder": "Grinder",
       "item.minecraft.lingering_potion.effect.healing_potion": "Lingering Potion of Healing",
       "item.metaplay.molten_iron_bucket": "Molten Iron Bucket",
@@ -517,7 +526,6 @@
     "dependants": [],
     "mcreatorDependencies": [],
     "currentGenerator": "forge-1.19.4",
-    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
     "modElementsPackage": "net.qwertygaming.metaplay",
     "lockBaseModFiles": false
   },
