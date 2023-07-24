@@ -3,7 +3,7 @@
   "_type": "potioneffect",
   "definition": {
     "effectName": "Healing",
-    "icon": "636105769357948349.png",
+    "icon": "healing.png",
     "color": {
       "value": -1,
       "falpha": 0.0
